@@ -12,6 +12,13 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+			@media (min-width: 1200px) {
+				.container{
+					max-width: 970px;
+				}
+			}
+		</style>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -47,18 +54,38 @@
 								
 								<header>
 									<h2>THE SETUP</h2>
-									<p>Info about the project setup</p>
 								</header>
-								The goal of this project was to create a dataset of comparable software repositories that can be used to better study software agility. The purpose of studying software agility is to better understand how different approaches towards implementing software deal with the changing requirements of real-world software. This is often difficult to study as real-world software is hard to compare to each other. In order to aid such study, this project aimed at developing a set of software repositories that use different approaches towards implementing the same requirements and should therefore be comperable to each other.
+								<h3>Overview:</h3>
+								In six pairs of two the students have implemented toy banking systems using their own Java based approach. There where four phases during the development of the software, as shown in figure 1. Each phase introduced new requirements that the implementations had to be adjusted for.
 								<br/><br/>
-								To this purpose a group of students where tasked with implementing software. The students developed software with similar functionality but they used different approaches to implement this software.  The software was also developed in a manner that aims to simulates the real-world development of software through changing functionality requirements that where not know beforehand. In order to futher enhance the study of this set of comparable software,
-<br/><br/>
+
+								<figure style="text-align: center;">
+									<img src="images/4phases.png" alt="4 phases overview" width="750" >
+									<figcaption>Fig1. - A overview of the 4 phases. </figcaption>
+								</figure>
+
+								<!--<img src="images/4phases.png" style="align: center;">-->
+								<br/>
+								After the second phase most teams split up and continued the implementation of the extension in different orders.
+								The result is 10 different code bases that implement the same requirements using a different approach. See the <a href="results.html">result page</a> for more info.
+
 								Below we give more information into how the project was setup and the software/requirements that where implemented.
 
-								<br/><br/>
+
+
+								<hr/>
+								<!--<h3>Details:</h3>-->
+
+								<!--The goal of this project was to create a dataset of comparable software repositories that can be used to better study software agility. The purpose of studying software agility is to better understand how different approaches towards implementing software deal with the changing requirements of real-world software. This is often difficult to study as real-world software is hard to compare to each other. In order to aid such study, this project aimed at developing a set of software repositories that use different approaches towards implementing the same requirements and should therefore be comperable to each other.-->
+								<!--<br/><br/>-->
+								<!--To this purpose a group of students where tasked with implementing software. The students developed software with similar functionality but they used different approaches to implement this software.  The software was also developed in a manner that aims to simulates the real-world development of software through changing functionality requirements that where not know beforehand. In order to futher enhance the study of this set of comparable software,-->
+<!--<br/><br/>-->
+								<!--Below we give more information into how the project was setup and the software/requirements that where implemented.-->
+
+								<!--<br/><br/>-->
 
 								<h3>The software development:</h3>
-								The software system developed in this project a toy banking system. The main idea of the initial system is that a consumer should be able to open and use a bank account through this system. Initially the students where given a short set of functionality requirements that the system should support and where asked to develop their own approach towads implementing this functionality.
+								The software system developed in this project a toy banking system. The main idea of the initial system is that a consumer should be able to open and use a bank account through this system. Initially the students where given a short set of functionality requirements that the system should support and were asked to develop their own approach towards implementing this functionality.
 								<br/><br/>
 								After the students had developed this initial system, the functionality of their systems converged by specifying a communication protocol that their systems should implement. This communication protocol made all functionality requirements more specific and reduced ambiguity.
 								<br/><br/>
@@ -67,21 +94,22 @@
 								<br/><br/>
 
 								<h3>Additional requirements:</h3>
-								In addition to the set of functionality requirements that the students had to implement, there was another set of requirements that the students had to work with.
+								In addition to the set of functionality requirements that the students had to implement, there was another set of requirements that the students had to work with.<br/>
 								- The software should be written in Java. They were however free to use frameworks/libraries of their choosing.<br/>
 								- They had to use git as a version control system and tag different versions of their systems.<br/>
 								- They had to register the effort required for each part through the number of hours.<br/>
 								- They had to reflect on how all changing requirements impacted their approach.<br/>
-
+								<br/>
 
 								<h3>The details:</h3>
 								The actual details, such as the initial requirements, the protocol and the extensions. In addition the two possible routes. Coming soon.
 
-								<br/><br/>
+								<br/>
 								Extension set 1:<br/>
-								Route 1: X2 X4 X5 X7 X3 X8<br/>
-								Route 2: X3 X4 X2 X5 X8 X7<br/>
-								<br/><br/>
+								Route 1: X2 X4 X5 X7 X6 X3<br/>
+								Route 2: X3 X4 X2 X5 X6 X7<br/>
+								<br/>
+
 								Extension set 2:<br/>
 								Route 1: x8 x11 x10 x9 x13 x12<br/>
 								Route 2: x9 x8 x12 x13 x11 x10<br/>
